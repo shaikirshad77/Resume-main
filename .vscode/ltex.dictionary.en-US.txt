@@ -1,0 +1,8 @@
+Actix
+Aryabhatta
+Geminid
+Alphaveric
+Ghalib
+SurrealDB
+ESBuild
+transpiler
