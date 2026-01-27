@@ -156,16 +156,6 @@ hr {
   flex-direction: column;
   margin: 3px 0;
 }
-.summary-text {
-  color: #000;          
-  font-weight: 400;   
-  line-height: 1.6;
-  margin: 6px 0 14px 0;
-}
-
-.summary-text strong {
-  font-weight: 600;
-}
 
 .list-item-header {
   display: flex;
@@ -192,3 +182,113 @@ hr {
 .list-item-description ul {
   list-style-type: disc;
 }
+/* ========================= */
+/* A4 COMPACT SKILLS FIX     */
+/* ========================= */
+
+.skills-inline {
+  margin: 2px 0;
+  line-height: 1.15;
+  font-size: 12px;
+}
+
+.skills-inline strong {
+  font-weight: 600;
+}
+
+/* Kill browser-added spacing in print */
+@media print {
+  .summary-text {
+    line-height: 1.15;      /* tighter in A4 */
+    margin: 0;
+    padding: 0;
+  }
+
+  .summary-text strong {
+    font-weight: 600;
+  }
+}
+
+/* Space between summary and bullet points */
+.experience-summary {
+  margin-bottom: 6px;   /* 👈 controlled gap */
+}
+
+/* Keep summary compact */
+.summary-text {
+  margin: 0;
+  line-height: 1.18;
+}
+
+/* Tight bullets (no extra gap above first bullet) */
+.list-item-description ul {
+  margin-top: 0;
+}
+/* === Skills spacing fix (A4 perfect) === */
+
+.skills-row-inline {
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.25;
+  margin: 1px 0;
+}
+
+.skills-label {
+  min-width: 130px;   /* key: aligns all rows */
+  font-weight: 600;
+}
+
+.skills-text {
+  flex: 1;
+}
+
+/* Print tightening */
+@media print {
+  .skills-row-inline {
+    line-height: 1.2;
+    margin: 0;
+  }
+}
+/* ========================= */
+/* HEADER SPACE OPTIMIZATION */
+/* ========================= */
+
+.contact-line {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1px 0;
+}
+
+.contact-line a {
+  margin: 0 2px;
+}
+
+/* Remove extra spacing from header containers */
+.heading-info {
+  margin: 0;
+}
+
+.p-info {
+  padding: 0;
+}
+
+/* Reduce name spacing */
+.p-name {
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
+/* Print-specific tightening */
+@media print {
+  .contact-line {
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .p-name {
+    margin-bottom: 1px;
+  }
+}
+
