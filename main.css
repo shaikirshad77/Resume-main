@@ -156,6 +156,16 @@ hr {
   flex-direction: column;
   margin: 3px 0;
 }
+.summary-text {
+  color: #000;          
+  font-weight: 400;   
+  line-height: 1.6;
+  margin: 6px 0 14px 0;
+}
+
+.summary-text strong {
+  font-weight: 600;
+}
 
 .list-item-header {
   display: flex;
