@@ -182,9 +182,6 @@ hr {
 .list-item-description ul {
   list-style-type: disc;
 }
-/* ========================= */
-/* A4 COMPACT SKILLS FIX     */
-/* ========================= */
 
 .skills-inline {
   margin: 2px 0;
@@ -199,7 +196,7 @@ hr {
 /* Kill browser-added spacing in print */
 @media print {
   .summary-text {
-    line-height: 1.15;      /* tighter in A4 */
+    line-height: 1.15; 
     margin: 0;
     padding: 0;
   }
@@ -211,7 +208,7 @@ hr {
 
 /* Space between summary and bullet points */
 .experience-summary {
-  margin-bottom: 6px;   /* 👈 controlled gap */
+  margin-bottom: 6px;  
 }
 
 /* Keep summary compact */
@@ -250,10 +247,6 @@ hr {
     margin: 0;
   }
 }
-/* ========================= */
-/* HEADER SPACE OPTIMIZATION */
-/* ========================= */
-
 .contact-line {
   text-align: center;
   font-weight: 600;
